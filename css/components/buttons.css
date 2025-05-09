@@ -1,0 +1,204 @@
+/* Button Styles */
+
+/* CTA Buttons */
+.cta-buttons {
+    display: flex;
+    gap: var(--spacing-4);
+    margin-top: var(--spacing-8);
+    flex-wrap: wrap;
+}
+
+.cta-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-2);
+    padding: var(--spacing-3) var(--spacing-6);
+    border-radius: var(--spacing-6);
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: -0.01em;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    margin: var(--spacing-4);
+}
+
+.cta-btn span {
+    position: relative;
+}
+
+.cta-btn svg {
+    transition: transform 0.3s ease;
+}
+
+.skills-cta {
+    margin-top: var(--spacing-12);
+    display: flex;
+    justify-content: center;
+}
+
+/* Contact button styles */
+.contact-btn, .back-to-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-2);
+    padding: var(--spacing-3) var(--spacing-8);
+    border-radius: var(--spacing-6);
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: -0.01em;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid;
+}
+
+.dark-mode .contact-btn, .dark-mode .back-to-btn {
+    color: var(--dark-text-primary);
+    border-color: var(--dark-text-secondary);
+    background-color: transparent;
+}
+
+.light-mode .contact-btn, .light-mode .back-to-btn {
+    color: var(--light-text-primary);
+    border-color: var(--light-text-secondary);
+    background-color: transparent;
+}
+
+.contact-btn:hover svg {
+    transform: translateX(4px);
+}
+
+.dark-mode .contact-btn:hover, .dark-mode .back-to-btn:hover {
+    border-color: var(--dark-text-primary);
+}
+
+.light-mode .contact-btn:hover, .light-mode .back-to-btn:hover {
+    border-color: var(--light-text-primary);
+}
+
+/* Download Resume button */
+.dark-mode .download-btn {
+    background-color: var(--dark-accent);
+    color: var(--dark-bg-primary);
+}
+
+.light-mode .download-btn {
+    background-color: var(--light-accent);
+    color: var(--light-bg-primary);
+}
+
+.download-btn:hover svg {
+    transform: translateY(2px);
+}
+
+/* View Skills button */
+.dark-mode .skills-btn {
+    background-color: transparent;
+    color: var(--dark-text-primary);
+    border: 1px solid var(--dark-text-secondary);
+}
+
+.light-mode .skills-btn {
+    background-color: transparent;
+    color: var(--light-text-primary);
+    border: 1px solid var(--light-text-secondary);
+}
+
+.skills-btn:hover svg {
+    transform: translateX(2px);
+}
+
+/* Button hover effects */
+.dark-mode .download-btn:hover {
+    background-color: #a8a8ff;
+}
+
+.light-mode .download-btn:hover {
+    background-color: #4687c9;
+}
+
+.dark-mode .skills-btn:hover {
+    border-color: var(--dark-text-primary);
+}
+
+.light-mode .skills-btn:hover {
+    border-color: var(--light-text-primary);
+}
+
+/* Close button styles */
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0;
+    transition: color 0.3s ease;
+}
+
+.dark-mode .close-btn {
+    color: var(--dark-text-secondary);
+}
+
+.light-mode .close-btn {
+    color: var(--light-text-secondary);
+}
+
+.dark-mode .close-btn:hover {
+    color: var(--dark-text-primary);
+}
+
+.light-mode .close-btn:hover {
+    color: var(--light-text-primary);
+}
+
+/* Theme Toggle Button styles */
+#theme-toggle, #mobile-theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: var(--spacing-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: var(--spacing-6);
+    height: var(--spacing-6);
+}
+
+/* Theme Icons Styling */
+.theme-icon {
+    position: absolute;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.sun-icon {
+    stroke: var(--sun-color);
+}
+
+.moon-icon {
+    stroke: var(--moon-color);
+}
+
+/* Show/hide appropriate icon based on theme */
+.dark-mode .sun-icon {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.dark-mode .moon-icon {
+    opacity: 0;
+    transform: scale(0.5);
+}
+
+.light-mode .sun-icon {
+    opacity: 0;
+    transform: scale(0.5);
+}
+
+.light-mode .moon-icon {
+    opacity: 1;
+    transform: scale(1);
+}

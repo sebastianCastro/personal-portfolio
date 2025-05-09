@@ -1,0 +1,30 @@
+/* Footer Styles */
+
+/* Footer styles */
+html {
+    position: relative;
+    min-height: 100vh;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: var(--spacing-8) 0;
+    margin-top: var(--spacing-16);
+    font-size: 0.875rem;
+    box-sizing: border-box;
+
+    /* position: absolute; */
+    bottom: 0;
+    height: 2.5rem; 
+}
+
+.dark-mode footer {
+    color: var(--dark-text-secondary);
+}
+
+.light-mode footer {
+    color: var(--light-text-secondary);
+}

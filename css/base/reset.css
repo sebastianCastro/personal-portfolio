@@ -1,0 +1,47 @@
+/* Reset and Base Element Styles */
+
+html {
+    color-scheme: dark light;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position: relative;
+    min-height: 100vh;
+}
+
+/* * {
+    outline: 1px solid red;
+  } */
+
+
+/* Dark Mode (Default) */
+html.dark-mode {
+    background-color: var(--dark-bg-primary);
+    color: var(--dark-text-secondary);
+}
+
+/* Light Mode */
+html.light-mode {
+    background-color: var(--light-bg-primary);
+    color: var(--light-text-secondary);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    /* padding: 0 var(--spacing-5) 0 var(--spacing-5); */
+    overflow-x: hidden;
+}
+
+/* Base button styles */
+button {
+    padding: var(--spacing-2) var(--spacing-4);
+    border-radius: var(--spacing-1);
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-1);
+}

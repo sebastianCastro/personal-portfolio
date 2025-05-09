@@ -1,0 +1,176 @@
+/* Form Styles */
+
+/* Form Structure */
+.form-row {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin-bottom: var(--spacing-4);
+    align-items: center;
+}
+
+.form-col {
+    display: flex;
+    width: 80px;
+}
+
+.label-col {
+    justify-content: flex-end;
+}
+
+.input-col {
+    width: auto;
+    flex-grow: 1;
+}
+
+.button-col {
+    justify-content: flex-start;
+}
+
+.label-col span {
+    width: 100%;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.dark-mode label {
+    color: var(--dark-text-secondary);
+}
+
+.light-mode label {
+    color: var(--light-text-secondary);
+}
+
+/* Form Elements */
+input[type="email"],
+select,
+.fake-input,
+textarea {
+    width: 100%;
+    padding: var(--spacing-2);
+    border-radius: var(--spacing-1);
+    border: 1px solid;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.dark-mode input[type="email"],
+.dark-mode select,
+.dark-mode .fake-input,
+.dark-mode textarea {
+    background-color: var(--dark-bg-primary);
+    color: var(--dark-text-secondary);
+    border-color: #3d3d3d;
+}
+
+.light-mode input[type="email"],
+.light-mode select,
+.light-mode .fake-input,
+.light-mode textarea {
+    background-color: var(--light-bg-primary);
+    color: var(--light-text-secondary);
+    border-color: #dfd5b2;
+}
+
+.dark-mode input[type="email"]:focus,
+.dark-mode select:focus,
+.dark-mode textarea:focus {
+    border-color: var(--dark-accent);
+    outline: none;
+}
+
+.light-mode input[type="email"]:focus,
+.light-mode select:focus,
+.light-mode textarea:focus {
+    border-color: var(--light-accent);
+    outline: none;
+}
+
+.fake-input {
+    background-color: rgba(128, 128, 128, 0.1);
+    color: inherit;
+    cursor: not-allowed;
+}
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* Specific Form Elements */
+.message-row {
+    grid-template-columns: 1fr;
+}
+
+.full-width {
+    width: 100%;
+}
+
+/* Form Action Buttons */
+.action-buttons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Form Submit Button */
+.dark-mode #send-button {
+    background-color: #7979ff;
+    color: var(--dark-bg-secondary);
+}
+
+.light-mode #send-button {
+    background-color: #2465a7;
+    color: var(--light-bg-secondary);
+}
+
+#send-button {
+    background-color: var(--dark-accent);
+    color: white;
+}
+
+#send-button:disabled {
+    background-color: #888;
+    cursor: not-allowed;
+}
+
+.dark-mode #send-button:not(:disabled):hover {
+    background-color: var(--dark-accent);
+}
+
+.light-mode #send-button:not(:disabled):hover {
+    background-color: var(--light-accent);
+}
+
+/* Attach Button */
+.attach-btn {
+    background: transparent;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-1);
+}
+
+.dark-mode .attach-btn {
+    color: var(--dark-text-secondary);
+    border-color: #444;
+}
+
+.light-mode .attach-btn {
+    color: var(--light-text-secondary);
+    border-color: #ccc;
+}
+
+.dark-mode .attach-btn:hover {
+    color: var(--dark-text-primary);
+    border-color: var(--dark-text-primary);
+}
+
+.light-mode .attach-btn:hover {
+    color: var(--light-text-primary);
+    border-color: var(--light-text-primary);
+}
+
+#result {
+    text-align: center;
+}

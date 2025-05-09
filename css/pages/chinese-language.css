@@ -1,0 +1,7 @@
+.skill-content.text-right {
+    grid-template-columns: 1fr;
+}
+
+.skill-section {
+    margin-bottom: var(--spacing-6);
+}

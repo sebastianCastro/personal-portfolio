@@ -1,0 +1,108 @@
+/* Popup and Modal Styles */
+
+/* Contact Form Popup Styles */
+.contact-popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    transition: all 0.3s ease;
+}
+
+.popup-content {
+    position: relative;
+    margin: 10% auto;
+    width: 90%;
+    max-width: 600px;
+    border-radius: var(--spacing-3);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    animation: slideIn 0.3s ease-out;
+    transition: background-color 0.3s ease;
+}
+
+.dark-mode .popup-content {
+    background-color: var(--dark-bg-secondary);
+    border: 1px solid #3d3d3d;
+}
+
+.light-mode .popup-content {
+    background-color: var(--light-bg-secondary);
+    border: 1px solid #dfd5b2;
+}
+
+.popup-header {
+    padding: var(--spacing-4);
+    border-bottom: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: border-color 0.3s ease;
+}
+
+.dark-mode .popup-header {
+    border-color: #3d3d3d;
+}
+
+.light-mode .popup-header {
+    border-color: #dfd5b2;
+}
+
+.popup-header h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.dark-mode .popup-header h3 {
+    color: var(--dark-text-primary);
+}
+
+.light-mode .popup-header h3 {
+    color: var(--light-text-primary);
+}
+
+.popup-body {
+    padding: var(--spacing-4);
+}
+
+/* Success message styles */
+.success-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: var(--spacing-8) 0;
+}
+
+.success-message svg {
+    margin-bottom: var(--spacing-4);
+}
+
+.dark-mode .success-message svg {
+    stroke: var(--dark-accent);
+}
+
+.light-mode .success-message svg {
+    stroke: var(--light-accent);
+}
+
+.success-message h3 {
+    margin-bottom: var(--spacing-2);
+    font-size: 1.5rem;
+}
+
+.success-message p {
+    margin-bottom: var(--spacing-6);
+}
+
+#close-success {
+    padding: var(--spacing-2) var(--spacing-8);
+}

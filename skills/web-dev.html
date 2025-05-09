@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-mode">
+<head>
+    <script>
+        // Immediately apply the saved theme to prevent flashing
+        (function() {
+            const savedTheme = localStorage.getItem('theme') || 'dark';
+            if (savedTheme === 'light') {
+                document.documentElement.classList.remove('dark-mode');
+                document.documentElement.classList.add('light-mode');
+            } else {
+                document.documentElement.classList.remove('light-mode');
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Sebastian Castro | Web Dev</title>
+    <meta name="title" content="Sebastian Castro | Web Dev">
+    <meta name="description" content="Self-taught front-end developer specializing in vanilla HTML, CSS & JavaScript. Explore my projects and journey from The Odin Project to full-stack aspirations.">
+    <meta name="keywords" content="Sebastian Castro, web developer, tech professional, Mandarin, e-commerce, portfolio, developer skills">
+    <meta name="author" content="Sebastian Castro">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sebastiancastro.com/web-dev">
+    <meta property="og:title" content="Sebastian Castro | Web Dev">
+    <meta property="og:description" content="Self-taught front-end developer specializing in vanilla HTML, CSS & JavaScript. Explore my projects and journey from The Odin Project to full-stack aspirations.">
+    <meta property="og:image" content="https://sebastiancastro.com/images/preview.png">
+    
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://sebastiancastro.com/web-dev">
+    <meta name="twitter:title" content="Sebastian Castro | Web Dev">
+    <meta name="twitter:description" content="Self-taught front-end developer specializing in vanilla HTML, CSS & JavaScript. Explore my projects and journey from The Odin Project to full-stack aspirations.">
+    <meta name="twitter:image" content="https://sebastiancastro.com/images/preview.png">
+    
+    <!-- Canonical URL -->
+    <meta rel="canonical" href="https://sebastiancastro.com/web-dev">
+    
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/pages/skills-template-style.css">
+    <link rel="stylesheet" href="/css/pages/web-dev.css">
+    <script src="/contact-form.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/favicon_io/site.webmanifest">
+    
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Sebastian Castro",
+      "url": "https://sebastiancastro.com",
+      "sameAs": [
+        "https://linkedin.com/in/sebastian_caj",
+        "https://github.com/sebastianCastro",
+        "https://www.instagram.com/sebastian_caj"
+      ],
+      "jobTitle": "Tech Professional",
+      "knowsLanguage": ["English", "Spanish", "Mandarin"],
+      "description": "Tech-obsessed self-learner with an e-commerce degree, Mandarin fluency, and a passion for building digital solutions."
+    }
+    </script>
+</head>
+<body>
+    <!-- Desktop Navigation -->
+    <nav class="desktop-nav">
+        <div id="nav-content">
+            <div id="nav-links">
+                <a class="nav-link" href="/index.html">Home</a>
+                <a class="nav-link" href="/SebastianCastroResume2025.pdf" download>Resume</a>
+                <a class="nav-link" href="/skills.html">Skills</a>
+                <a class="nav-link" href="/contact.html">Contact</a>
+                <button id="theme-toggle" aria-label="Toggle dark/light mode">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="theme-icon sun-icon"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="theme-icon moon-icon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Main Content Wrapper -->
+    <div id="wrapper">
+        <!-- Hero Section with Parallax -->
+        <div class="parallax-container">
+            <div class="parallax-bg"></div>
+            <div class="parallax-content">
+                <h1>Front-End Development</h1>
+                <p>Self-taught front-end developer from <a href="https://www.theodinproject.com/" target="_blank">The Odin Project.</a></p>
+            </div>
+        </div>
+        
+        <!-- Main Content Container -->
+        <div id="skill-detail-container">
+            <!-- Metrics/Stats Section -->
+            <div class="skill-metrics">
+                <div class="metric-card">
+                    <div class="metric-value">5+</div>
+                    <div class="metric-label">Years Experience</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">Jr.</div>
+                    <div class="metric-label">Level</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">100%</div>
+                    <div class="metric-label">Powered by Google</div>
+                </div>
+            </div>
+            <!-- Introduction Section -->
+            <section class="skill-section">
+                <div class="skill-section-header">
+                    <h2 class="skill-section-title">My Journey into Front-End Development</h2>
+                    <!-- <p class="skill-section-subtitle">How I developed this skill and what it means to me</p> -->
+                </div>
+                
+                <div class="skill-content text-right">
+                    <div class="skill-text">
+                        <p>
+                            I've always been passionate about technology and computers, but I didn't seriously start learning programming until 2021, when I discovered The Odin Project. It sparked both a personal and career-driven motivation to become a developer.
+                        </p>
+                        <!-- <p>
+                            That journey led me to write my graduation thesis on Progressive Web Applications.
+                        </p> -->
+                    </div>
+                    <div class="skill-image-container">
+                        <img src="/images/front-end-img/odin.png" alt="Skill introduction image" class="skill-image">
+                        <!-- <div class="skill-image-caption">Caption for this image explaining its relevance</div> -->
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Key Projects Section -->
+            <section class="skill-section">
+                <!-- <div class="skill-section-header">
+                    <h2 class="skill-section-title">Key Projects</h2>
+                    <p class="skill-section-subtitle">Notable work that showcases this skill</p>
+                </div> -->
+                
+                <!-- <div class="skill-content text-left">
+                    <div class="skill-text">
+                        <p>
+                            I've always been passionate about technology and computers, but I didn't seriously start learning programming until 2021, when I discovered The Odin Project. It sparked both a personal and career-driven motivation to become a developer.</p>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        </p>
+                    </div>
+                    <div class="skill-image-container">
+                        <img src="/api/placeholder/600/400" alt="Project showcase image" class="skill-image">
+                        <div class="skill-image-caption">A key project that demonstrates this skill</div>
+                    </div>
+                </div> -->
+                
+                <!-- Project Gallery -->
+                <div class="skill-gallery">
+                    <div class="gallery-item">
+                        <a href="https://sebastiancastro.github.io/makaka-love/" target="_blank"><img src="/images/front-end-img/valentines.png" alt="Project example 1"></a>
+                    </div>
+                    <div class="gallery-item">
+                        <a href="https://sebastiancastro.github.io/taobao/" target="_blank"><img src="/images/front-end-img/taobao.png" alt="Project example 2"></a>
+                    </div>
+                    <div class="gallery-item">
+                        <a href="https://sebastiancastro.github.io/old-portfolio/" target="_blank"><img src="/images/front-end-img/old-portfolio.png" alt="Project example 3"></a>
+                    </div>
+                    <div class="gallery-item">
+                        <a href="sebastiancastro.github.io/merch-store/" target="_blank"><img src="/images/front-end-img/merch-store.png" alt="Project example 1"></a>
+                    </div>
+                    <div class="gallery-item">
+                        <a href="https://sebastiancastro.github.io/b2eMarketing/" target="_blank"><img src="/images/front-end-img/b2e-marketing.png" alt="Project example 2"></a>
+                    </div>
+                    <div class="gallery-item">
+                        <a href="https://sebastiancastro.github.io/etch-a-sketch/" target="_blank"><img src="/images/front-end-img/etch-a-sketch.png" alt="Project example 3"></a>
+                    </div>
+                    <div class="gallery-item">
+                        <a href="https://sebastiancastro.github.io/rock-paper-scissors/" target="_blank"><img src="/images/front-end-img/rps.png" alt="Project example 1"></a>
+                    </div>
+                    <div class="gallery-item">
+                        <a href="sebastiancastro.github.io/calculator/" target="_blank"><img src="/images/front-end-img/calculator.png" alt="Project example 2"></a>
+                    </div>
+                    <div class="gallery-item">
+                        <a href="https://sebastiancastro.github.io/google-homepage/" target="_blank"><img src="/images/front-end-img/google.png" alt="Project example 3"></a>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Technical Details Section -->
+            <!-- <section class="skill-section">
+                <div class="skill-section-header">
+                    <h2 class="skill-section-title">Technical Details</h2>
+                    <p class="skill-section-subtitle">The specifics of what I know and can do</p>
+                </div>
+                
+                <div class="skill-content">
+                    <div class="skill-text">
+                        <p>
+                            Today, I feel most comfortable working with vanilla HTML, CSS, and JavaScript. I'm currently planning to continue with The Odin Project's intermediate lessons, especially focusing on learning Node.js.
+                        </p>
+                        <p>
+                            This is also a good place to talk about your approach to problem-solving in this domain and what sets your skills apart from others.
+                        </p>
+                    </div>
+                </div>
+
+            </section> -->
+            
+            <!-- Quote Section -->
+            <!-- <div class="skill-quote">
+                My learning philosophy is very hands-on. The Odin Project taught me that if I don't know something, the answer is usually just a Google search away. This approach has made me confident in figuring things out on my own.
+            </div> -->
+            
+            <!-- Learning Path Section -->
+            <section class="skill-section">
+                <div class="skill-section-header">
+                    <h2 class="skill-section-title">Continuous Learning</h2>
+                    <!-- <p class="skill-section-subtitle">How I stay current and keep improving</p> -->
+                </div>
+                
+                <div class="skill-content text-center">
+                    <div class="skill-text">
+                        <p>
+                            Today, I feel most at home building with the basics — vanilla HTML, CSS, and JavaScript. But as I launch this static website into the web, it marks more than just a deployment. It’s a milestone. I've resumed my journey with The Odin Project, where I’m setting my sights beyond the front end. Step by step, I’ll be diving into a full stack skillset — exploring React, databases, and Node.js — expanding my foundation into something much more powerful.
+                        </p>
+                </div>
+            </section>
+            
+            <!-- Call to Action -->
+            <!-- <div class="skills-cta">
+                <a href="contact.html" class="cta-btn contact-btn">
+                    <span>Interested in my skills? Get in touch</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+            </div> -->
+        </div>
+        <!-- Back to Skills Link -->
+        <div class="skills-cta">
+            <a href="/skills.html" class="cta-btn back-to-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                <span>Back to Skills</span>
+            </a>
+        </div>
+        
+        <!-- Contact Form Popup HTML with Web3Forms fields -->
+        <div id="contact-popup" class="contact-popup">
+            <div class="popup-content">
+                <div class="popup-header">
+                    <h3>Contact Me</h3>
+                    <button id="close-popup" class="close-btn">&times;</button>
+                </div>
+                <div class="popup-body">
+                    <form id="contact-form">
+                        <!-- Hidden Web3Forms fields -->
+                        <input type="hidden" name="access_key" value="82b20fdf-e5e9-4b43-a37b-616c0304ef3e">
+                        <input type="hidden" name="from_name" value="Website Contact Form">
+                        <input type="checkbox" name="botcheck" style="display: none;">
+                        
+                        <div class="form-row">
+                            <div class="form-col label-col">
+                                <span>To:</span>
+                            </div>
+                            <div class="form-col input-col">
+                                <div class="fake-input">Sebastian Castro</div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-col label-col">
+                                <span>From:</span>
+                            </div>
+                            <div class="form-col input-col">
+                                <input type="email" id="sender-email" name="email" placeholder="Your email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-col label-col">
+                                <span>Subject:</span>
+                            </div>
+                            <div class="form-col input-col">
+                                <select id="subject" name="subject_choice" required>
+                                    <option value="" disabled selected>Select a subject</option>
+                                    <option value="job">Job Opportunity</option>
+                                    <option value="project">Project Collaboration</option>
+                                    <option value="question">Question</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="message-row">
+                            <div class="form-col full-width">
+                                <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+                            </div>
+                        </div>
+                    
+                        <!-- File input for attachments -->
+                        <input type="file" id="file-input" style="display: none;">
+                        
+                        <div class="action-buttons">
+                            <button type="button" id="attach-button" class="attach-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l8.57-8.57A4 4 0 1 1 18 8.84l-8.59 8.57a2 2 0 0 1-2.83-2.83l8.49-8.48"/></svg>
+                                Attach
+                            </button>
+                            <button type="submit" id="send-button" disabled>Send</button>
+                        </div>
+                        
+                        <!-- Result div for Web3Forms response messages -->
+                        <div id="result" style="display: none;"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        © 2025 Sebastian Castro. All rights reserved.
+    </footer>
+    
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+        <a class="mobile-nav-link" href="index.html">Home</a>
+        <div class="mobile-nav-controls">
+            <button id="burger-menu-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg>
+            </button>
+            <button id="mobile-theme-toggle" aria-label="Toggle dark/light mode">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="theme-icon sun-icon"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="theme-icon moon-icon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+            </button>
+        </div>
+        <div id="mobile-menu">
+            <a class="mobile-nav-link" href="sebastianCastro.pdf" download>Resume</a>
+            <a class="mobile-nav-link" href="skills.html">Skills</a>
+            <a class="mobile-nav-link" href="#contact">Contact</a>
+        </div>
+    </nav>
+    
+    <script>
+        // Toggle mobile menu
+        document.getElementById('burger-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Theme toggle functionality
+        function toggleTheme() {
+            const htmlElement = document.documentElement;
+            const isDarkMode = htmlElement.classList.contains('dark-mode');
+            
+            // Toggle class on html element
+            htmlElement.classList.toggle('dark-mode');
+            htmlElement.classList.toggle('light-mode');
+            
+            // Save preference to localStorage
+            localStorage.setItem('theme', isDarkMode ? 'light' : 'dark');
+        }
+        
+        // Event listeners for theme toggle buttons
+        document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
+        document.getElementById('mobile-theme-toggle').addEventListener('click', toggleTheme);
+        
+        // Parallax effect on scroll
+        // window.addEventListener('scroll', function() {
+        //     const parallaxBg = document.querySelector('.parallax-bg');
+        //     const scrollPosition = window.pageYOffset;
+        //     parallaxBg.style.transform = 'translateY(' + scrollPosition * 0.1 + 'rem)';
+        // });
+    </script>
+</body>
+</html>

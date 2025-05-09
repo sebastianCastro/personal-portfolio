@@ -1,0 +1,17 @@
+.skill-content.text-center {
+    grid-template-columns: 1fr;
+}
+
+.skill-image-container {
+    aspect-ratio: inherit;
+}
+
+.skill-content:is(:nth-child(4), :nth-child(5), :nth-child(7)) {
+    margin-top: var(--spacing-5);
+}
+
+@media screen and (max-width: 480px) {
+    .skill-content {
+        gap: 0;
+    }
+}

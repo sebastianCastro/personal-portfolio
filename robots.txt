@@ -1,0 +1,27 @@
+# robots.txt for sebastiancastro.com
+
+User-agent: *
+Allow: /
+
+# Disallow folders that should not be indexed
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /login/
+Disallow: /private/
+Disallow: /temp/
+
+# Disallow file types that are not useful for search engines
+Disallow: /*.tmp$
+Disallow: /*.test$
+Disallow: /*.bak$
+Disallow: /*.pages$
+Disallow: /*.pptx$
+Disallow: /*.docx$
+Disallow: /*.pdf$
+
+# Block heavy or private media
+Disallow: /audio/
+Disallow: /certificates/
+
+# Sitemap location
+Sitemap: https://sebastiancastro.com/sitemap.xml

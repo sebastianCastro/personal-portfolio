@@ -1,0 +1,83 @@
+/* Media Queries and Responsive Styles */
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    /* .desktop-nav {
+        display: none;
+    }
+    
+    .mobile-nav {
+        display: flex;
+    } */
+    
+    h1 {
+        font-size: 3rem;
+        line-height: 1.2;
+    }
+    
+    #wrapper {
+        /* padding: var(--spacing-10) 0; */
+        padding: var(--spacing-6) var(--spacing-10) var(--spacing-6) var(--spacing-10);
+    }
+    
+    /* Form responsive styles */
+    .form-row {
+        grid-template-columns: auto 1fr;
+        gap: var(--spacing-2);
+    }
+    
+    .label-col {
+        justify-content: flex-start;
+        min-width: 60px;
+    }
+    
+    .button-col {
+        display: none;
+    }
+    
+    .action-buttons {
+        flex-wrap: wrap;
+        margin-top: 0;
+    }
+
+    #attach-button, #send-button {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    
+    .popup-content {
+        margin: 15% auto;
+        width: 95%;
+    }
+}
+
+/* Additional responsive adjustments */
+@media screen and (max-width: 480px) {
+    .desktop-nav {
+        display: none;
+    }
+    
+    .mobile-nav {
+        display: flex;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+    
+    /* body {
+        padding: 0 var(--spacing-4) var(--spacing-18) var(--spacing-4);
+    } */
+    
+    #wrapper {
+        /* padding: var(--spacing-6) 0; */
+        padding: var(--spacing-6) var(--spacing-4) var(--spacing-6) var(--spacing-4);
+    }
+    
+    /* Button responsive styles */
+    .cta-buttons {
+        flex-direction: column;
+        gap: var(--spacing-3);
+    }
+}

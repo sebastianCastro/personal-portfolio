@@ -1,0 +1,199 @@
+/* Top Picks specific styles */
+.page-header {
+    width: 100%;
+    margin-bottom: var(--spacing-12);
+    text-align: center;
+}
+
+.page-title {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-2);
+}
+
+.page-subtitle {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.picks-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-6);
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    /* padding-bottom: var(--spacing-24); */
+}
+
+.pick-card {
+    position: relative;
+    border-radius: var(--spacing-4);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.dark-mode .pick-card {
+    background-color: var(--dark-bg-secondary);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.light-mode .pick-card {
+    background-color: var(--light-bg-secondary);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pick-card:hover {
+    transform: translateY(-5px);
+}
+
+.dark-mode .pick-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.light-mode .pick-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-content {
+    padding: var(--spacing-6);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.category-label {
+    display: inline-block;
+    padding: var(--spacing-1) var(--spacing-3);
+    border-radius: var(--spacing-4);
+    font-size: 0.7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--spacing-4);
+    width: 30%;
+    text-align: center;
+}
+
+.dark-mode .category-label {
+    background-color: rgba(152, 152, 255, 0.2);
+    color: var(--dark-accent);
+}
+
+.light-mode .category-label {
+    background-color: rgba(53, 118, 184, 0.1);
+    color: var(--light-accent);
+}
+
+.pick-image-container {
+    width: 100%;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: var(--spacing-4);
+}
+
+.pick-image {
+    width: auto;
+    height: auto;
+    /* aspect-ratio: 3 / 2; */
+    max-width: 80%;
+    max-height: 220px;
+    object-fit: contain;
+    border-radius: var(--spacing-2);
+}
+
+.pick-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: var(--spacing-2) 0 var(--spacing-1) 0;
+    transition: color 0.3s ease;
+}
+
+.dark-mode .pick-title {
+    color: var(--dark-text-primary);
+}
+
+.light-mode .pick-title {
+    color: var(--light-text-primary);
+}
+
+.pick-subtitle {
+    font-size: 0.95rem;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: var(--spacing-3);
+    transition: color 0.3s ease;
+}
+
+.dark-mode .pick-subtitle {
+    color: var(--dark-text-tertiary);
+}
+
+.light-mode .pick-subtitle {
+    color: var(--light-text-tertiary);
+}
+
+/* .pick-description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-top: auto;
+} */
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    margin-top: var(--spacing-10);
+    padding: var(--spacing-4) var(--spacing-6);
+    border-radius: var(--spacing-6);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin-bottom: var(--spacing-24);
+}
+
+.dark-mode .back-link {
+    background-color: var(--dark-bg-secondary);
+    color: var(--dark-text-primary);
+}
+
+.light-mode .back-link {
+    background-color: var(--light-bg-secondary);
+    color: var(--light-text-primary);
+}
+
+/* .back-link:hover {
+    transform: translateX(-5px);
+} */
+
+.dark-mode .back-link:hover {
+    background-color: var(--dark-accent);
+    color: var(--dark-bg-primary);
+}
+
+.light-mode .back-link:hover {
+    background-color: var(--light-accent);
+    color: var(--light-bg-primary);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .picks-grid {
+        grid-template-columns: 1fr;
+        /* padding-bottom: var(--spacing-24); */
+    }
+
+    .page-title {
+        font-size: 2.5rem;
+    }
+
+    .pick-image-container {
+        height: 200px;
+    }
+}

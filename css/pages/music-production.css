@@ -1,0 +1,13 @@
+.skill-section:is(:nth-child(2),:nth-child(3)){
+    margin-bottom: 0;
+}
+
+.skill-section:nth-of-type(3) .skill-content {
+    gap: 0;
+}
+
+@media screen and (max-width: 480px) {
+    .skill-content {
+        gap: 0;
+    }
+}

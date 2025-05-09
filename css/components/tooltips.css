@@ -1,0 +1,47 @@
+/* Tooltip and Highlight Styles */
+
+/* Adding styles for the underline and tooltip */
+.highlight {
+    position: relative;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.dark-mode .highlight {
+    text-decoration-color: var(--dark-accent);
+}
+
+.light-mode .highlight {
+    text-decoration-color: var(--light-accent);
+}
+
+.highlight::after {
+    content: "I use Arch, btw.";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s;
+}
+
+.dark-mode .highlight::after {
+    background-color: var(--dark-bg-secondary);
+    color: var(--dark-text-primary);
+    border: 1px solid var(--dark-accent);
+}
+
+.light-mode .highlight::after {
+    background-color: var(--light-bg-secondary);
+    color: var(--light-text-primary);
+    border: 1px solid var(--light-accent);
+}
+
+.highlight:hover::after {
+    visibility: visible;
+    opacity: 1;
+}

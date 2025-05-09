@@ -1,0 +1,30 @@
+.skill-image {
+    width: auto;
+}
+
+.text-center {
+    grid-template-columns: 1fr;
+}
+
+.skill-image-container:hover .skill-image {
+    transform: none;
+}
+
+/* .skill-content.text-right {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.skill-content.text-left .skill-text {
+    order: 3;
+}
+
+.skill-text {
+    grid-row: span 2 / span 2;
+}
+
+@media screen and (max-width: 480px) {
+    .skill-content.text-right {
+        grid-template-columns: 1fr;
+    }
+} */

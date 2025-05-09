@@ -1,0 +1,58 @@
+/* Typography Styles */
+
+/* Theme-Specific Text Styling */
+.dark-mode h1 {
+    color: var(--dark-text-primary);
+}
+
+.light-mode h1 {
+    color: var(--light-text-primary);
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 6rem;
+    letter-spacing: -0.05em;
+    line-height: 1;
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.07em;
+    line-height: 1;
+    margin: var(--spacing-4) 0;
+    transition: color 0.3s ease;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1.125rem;
+    letter-spacing: -0.02em;
+    line-height: 1.5;
+    margin: var(--spacing-4) 0;
+    transition: color 0.3s ease;
+}
+
+.dark-mode #tag-line {
+    color: var(--dark-accent);
+}
+
+.light-mode #tag-line {
+    color: var(--light-accent);
+}
+
+/* List styling */
+u {
+    text-decoration: none;
+    padding-left: var(--spacing-4);
+    margin: var(--spacing-4) 0;
+    display: block;
+}
+
+li {
+    margin-bottom: var(--spacing-3);
+}

@@ -1,0 +1,167 @@
+/* Home Bottom Section Layout */
+#home-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-16);
+    margin-top: var(--spacing-6);
+}
+
+.home-bottom-statement p {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    font-weight: 500;
+    margin: 0;
+}
+
+.home-bottom-nav h4 {
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--spacing-4);
+    margin-top: 0;
+    font-weight: 500;
+    opacity: 0.7;
+}
+
+.nav-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--spacing-2);
+}
+
+.icon {
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px; */
+    margin-right: var(--spacing-3);
+    /* border-radius: 4px; */
+
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: var(--color--hr-dark);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: var(--color--hr-dark);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: var(--color--hr-dark);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: var(--color--hr-dark);
+    color: currentColor;
+    border-radius: .3125rem;
+    flex: none;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    transition-property: border-color, background-color;
+    transition-duration: .2s, .2s;
+    transition-timing-function: ease, ease;
+    display: flex;
+}
+
+.dark-mode .icon {
+    background-color: var(--dark-bg-primary);
+}
+
+.light-mode .icon {
+    background-color: var(--light-bg-primary);
+}
+
+.nav-option a {
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.dark-mode .nav-option a {
+    color: var(--dark-text-primary);
+}
+
+.light-mode .nav-option a {
+    color: var(--light-text-primary);
+}
+
+.dark-mode .nav-option a:hover {
+    color: var(--dark-accent);
+}
+
+.light-mode .nav-option a:hover {
+    color: var(--light-accent);
+}
+
+/* Glitch effect styles */
+.glitch-effect {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+
+/* Text glitch effect */
+.glitch-effect h1, 
+.glitch-effect h2, 
+.glitch-effect p, 
+.glitch-effect a, 
+.glitch-effect span {
+    font-family: monospace !important;
+    transition: all 0.1s ease;
+    display: inline-block;
+}
+
+/* Random element flickering */
+@keyframes flicker {
+    0% { opacity: 1; }
+    25% { opacity: 0.3; }
+    50% { opacity: 1; }
+    75% { opacity: 0.2; }
+    100% { opacity: 1; }
+}
+
+.flicker {
+    animation: flicker 0.5s linear infinite;
+}
+
+/* Distortion effect */
+.glitch-effect::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: calc(100% + 20px);
+    height: 100%;
+    background: rgba(255, 0, 0, 0.05);
+    mix-blend-mode: multiply;
+    pointer-events: none;
+    animation: scan 0.5s linear infinite;
+}
+
+@keyframes scan {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(100%); }
+}
+
+/* Smooth page transition */
+body {
+    transition: opacity 0.3s ease;
+}
+
+/* Digital distortion effect when glitching */
+.glitch-effect img,
+.glitch-effect svg {
+    filter: hue-rotate(180deg) brightness(1.5) contrast(1.5);
+    transition: all 0.2s ease;
+}
+
+/* Make it responsive */
+@media screen and (max-width: 768px) {
+    #home-bottom {
+        margin-top: 0;
+        grid-template-columns: 1fr;
+        gap: var(--spacing-4);
+    }
+    
+    .home-bottom-statement p {
+        font-size: 1.25rem;
+    }
+}

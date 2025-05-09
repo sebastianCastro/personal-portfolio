@@ -1,0 +1,249 @@
+.desktop-nav {
+    height: var(--spacing-18);
+}
+
+/* Skills Page Specific Styles */
+#skills-container {
+    width: 100%;
+    max-width: 800px;
+    padding: 0 0 40px 0;
+    margin: 0 auto;
+}
+
+#skills-heading {
+    margin-bottom: var(--spacing-10);
+}
+
+.skills-directory {
+    margin: var(--spacing-10) 0;
+}
+
+.directory-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3);
+}
+
+.directory-item {
+    width: 100%;
+    transition: transform 0.2s ease;
+}
+
+.directory-item:hover {
+    transform: translateX(var(--spacing-1));
+}
+
+.skill-link {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-4);
+    padding: var(--spacing-4);
+    border-radius: var(--spacing-2);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.dark-mode .skill-link {
+    background-color: var(--dark-bg-secondary);
+}
+
+.light-mode .skill-link {
+    background-color: var(--light-bg-secondary);
+}
+
+.dark-mode .skill-link:hover {
+    background-color: #282828;
+}
+
+.light-mode .skill-link:hover {
+    background-color: #e0d6bd;
+}
+
+.skill-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: var(--spacing-2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.dark-mode .skill-icon {
+    background-color: rgba(152, 152, 255, 0.1);
+}
+
+.light-mode .skill-icon {
+    background-color: rgba(53, 118, 184, 0.1);
+}
+
+.dark-mode .skill-icon svg {
+    stroke: var(--dark-accent);
+}
+
+.light-mode .skill-icon svg {
+    stroke: var(--light-accent);
+}
+
+.skill-link:hover .skill-icon {
+    transform: scale(1.1);
+}
+
+.skill-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-1);
+}
+
+.skill-name {
+    font-weight: 600;
+    font-size: 1.25rem;
+    transition: color 0.3s ease;
+}
+
+.dark-mode .skill-name {
+    color: var(--dark-text-primary);
+}
+
+.light-mode .skill-name {
+    color: var(--light-text-primary);
+}
+
+.skill-path {
+    font-family: monospace;
+    font-size: 0.875rem;
+    transition: color 0.3s ease;
+}
+
+.dark-mode .skill-path {
+    color: var(--dark-text-tertiary);
+}
+
+.light-mode .skill-path {
+    color: var(--light-text-tertiary);
+}
+
+.arrow-icon {
+    opacity: 0.6;
+    transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+.skill-link:hover .arrow-icon {
+    opacity: 1;
+    transform: translateX(var(--spacing-1));
+}
+
+.dark-mode .arrow-icon svg {
+    stroke: var(--dark-text-secondary);
+}
+
+.light-mode .arrow-icon svg {
+    stroke: var(--light-text-secondary);
+}
+
+.skills-cta {
+    margin-top: var(--spacing-12);
+    display: flex;
+    justify-content: center;
+}
+
+/* Contact button styles */
+/* .contact-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-2);
+    padding: var(--spacing-3) var(--spacing-8);
+    border-radius: var(--spacing-6);
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: -0.01em;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid;
+}
+
+.dark-mode .contact-btn {
+    color: var(--dark-text-primary);
+    border-color: var(--dark-text-secondary);
+    background-color: transparent;
+}
+
+.light-mode .contact-btn {
+    color: var(--light-text-primary);
+    border-color: var(--light-text-secondary);
+    background-color: transparent;
+}
+
+.contact-btn:hover svg {
+    transform: translateX(4px);
+}
+
+.dark-mode .contact-btn:hover {
+    border-color: var(--dark-text-primary);
+}
+
+.light-mode .contact-btn:hover {
+    border-color: var(--light-text-primary);
+} */
+
+/* Media queries for responsive skills layout */
+@media screen and (max-width: 768px) {
+    #skills-heading {
+        font-size: 3rem;
+    }
+    
+    .skill-link {
+        padding: var(--spacing-3);
+    }
+    
+    .skill-icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .skill-name {
+        font-size: 1.125rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #skills-heading {
+        font-size: 2.5rem;
+        margin-bottom: var(--spacing-6);
+    }
+    
+    .skills-directory {
+        margin: var(--spacing-6) 0;
+    }
+    
+    .skill-link {
+        padding: var(--spacing-2);
+    }
+    
+    .skill-icon {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .skill-info {
+        gap: var(--spacing-1);
+    }
+    
+    .skill-name {
+        font-size: 1rem;
+    }
+    
+    .skill-path {
+        font-size: 0.75rem;
+    }
+    
+    .contact-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}

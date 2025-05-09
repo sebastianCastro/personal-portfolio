@@ -1,0 +1,52 @@
+/* CSS Variables and Theme Configuration */
+
+:root {
+    /* Spacing Grid System */
+    --grid-unit: 4px;
+    --spacing-1: calc(var(--grid-unit) * 1);  /* 4px */
+    --spacing-2: calc(var(--grid-unit) * 2);  /* 8px */
+    --spacing-3: calc(var(--grid-unit) * 3);  /* 12px */
+    --spacing-4: calc(var(--grid-unit) * 4);  /* 16px */
+    --spacing-5: calc(var(--grid-unit) * 5);  /* 20px */
+    --spacing-6: calc(var(--grid-unit) * 6);  /* 24px */
+    --spacing-8: calc(var(--grid-unit) * 8);  /* 32px */
+    --spacing-10: calc(var(--grid-unit) * 10); /* 40px */
+    --spacing-12: calc(var(--grid-unit) * 12); /* 48px */
+    --spacing-16: calc(var(--grid-unit) * 16); /* 64px */
+    --spacing-18: calc(var(--grid-unit) * 18); /* 72px */
+    --spacing-20: calc(var(--grid-unit) * 20); /* 80px */
+    --spacing-24: calc(var(--grid-unit) * 24); /* 96px */
+    
+    /* Column widths based on 12-column grid */
+    --col-1: 8.33%;
+    --col-2: 16.66%;
+    --col-4: 33.33%;
+    --col-6: 50%;
+    --col-8: 66.66%;
+    --col-10: 83.33%;
+    --col-12: 100%;
+    
+    /* Component sizes */
+    --container-max-width: 1200px;
+    --content-max-width: 768px;
+    
+    /* Color System - Dark Theme */
+    --dark-bg-primary: #191918;
+    --dark-bg-secondary: #1f1f1f;
+    --dark-text-primary: #fbfbfb;
+    --dark-text-secondary: #ccc;
+    --dark-text-tertiary: #999;
+    --dark-accent: #9898ff;
+    
+    /* Color System - Light Theme */
+    --light-bg-primary: #fdf8ef;
+    --light-bg-secondary: #efe8d4;
+    --light-text-primary: #212121;
+    --light-text-secondary: #2c2c2c;
+    --light-text-tertiary: #575757;
+    --light-accent: #3576b8;
+    
+    /* Theme icons */
+    --sun-color: #ffd479;
+    --moon-color: #3576b8;
+}

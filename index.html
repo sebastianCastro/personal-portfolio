@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" class="light-mode">
+<head>
+    <script>
+        // Immediately apply the saved theme to prevent flashing
+        (function() {
+            const savedTheme = localStorage.getItem('theme') || 'dark';
+            if (savedTheme === 'light') {
+                document.documentElement.classList.remove('dark-mode');
+                document.documentElement.classList.add('light-mode');
+            } else {
+                document.documentElement.classList.remove('light-mode');
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Sebastian Castro | Tech-Obsessed Self-Learner & Developer</title>
+    <meta name="title" content="Sebastian Castro | Tech-Obsessed Self-Learner & Developer">
+    <meta name="description" content="Tech-obsessed self-learner with an e-commerce degree, Mandarin fluency, and a passion for building digital solutions.">
+    <meta name="keywords" content="Sebastian Castro, web developer, tech professional, Mandarin, e-commerce, portfolio, developer skills">
+    <meta name="author" content="Sebastian Castro">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sebastiancastro.com/">
+    <meta property="og:title" content="Sebastian Castro | Tech-goblin In Training">
+    <meta property="og:description" content="Tech-obsessed self-learner with an e-commerce degree, Mandarin fluency, and a passion for building digital solutions.">
+    <meta property="og:image" content="https://sebastiancastro.com/images/preview.png">
+    
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://sebastiancastro.com/">
+    <meta name="twitter:title" content="Sebastian Castro | Tech-goblin In Training">
+    <meta name="twitter:description" content="Tech-obsessed self-learner with an e-commerce degree, Mandarin fluency, and a passion for building digital solutions.">
+    <meta name="twitter:image" content="https://sebastiancastro.com/images/preview.png">
+    
+    <!-- Canonical URL -->
+    <meta rel="canonical" href="https://sebastiancastro.com/">
+    
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/pages/index-style.css">
+    <script src="contact-form.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Sebastian Castro",
+      "url": "https://sebastiancastro.com",
+      "sameAs": [
+        "https://linkedin.com/in/sebastian_caj",
+        "https://github.com/sebastianCastro",
+        "https://www.instagram.com/sebastian_caj"
+      ],
+      "jobTitle": "Tech Professional",
+      "knowsLanguage": ["English", "Spanish", "Mandarin"],
+      "description": "Tech-obsessed self-learner with an e-commerce degree, Mandarin fluency, and a passion for building digital solutions."
+    }
+    </script>
+</head>
+<body>
+    <!-- Desktop Navigation -->
+    <nav class="desktop-nav">
+        <div id="nav-content">
+            <div id="nav-links">
+                <a class="nav-link" href="">Home</a>
+                <a class="nav-link" href="sebastianCastro.pdf" download>Resume</a>
+                <a class="nav-link" href="skills.html">Skills</a>
+                <a class="nav-link" href="">Contact</a>
+                <button id="theme-toggle" aria-label="Toggle dark/light mode">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="theme-icon sun-icon"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="theme-icon moon-icon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Main Content Wrapper -->
+    <div id="wrapper">
+        <div id="about-me">
+            <div>
+                <h2 id="tag-line">TECH-GOBLIN IN TRAINING</h2>
+                <div id="name-header">
+                    <h1>Sebastian</h1>
+                    <h1>Castro</h1>
+                </div>
+            </div>
+            <div id="home-bottom">
+                <div class="home-bottom-statement">
+                    <p>
+                        Tech-obsessed self-learner with an e-commerce degree, Mandarin fluency, and a love for building things.
+                    </p>
+                    <a href="sebastianCastro.pdf" class="cta-btn download-btn" download>
+                        <span>Download Resume</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    </a>
+                </div>
+                <div class="home-bottom-nav">
+                    <h4>WHERE YOU CAN START</h4>
+                    <div class="nav-option">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-person-standing-icon lucide-person-standing"><circle cx="12" cy="5" r="1"/><path d="m9 20 3-6 3 6"/><path d="m6 8 6 2 6-2"/><path d="M12 10v4"/></svg>
+                        </div>
+                        <a href="about-me.html">About Me</a>
+                    </div>
+                    <div class="nav-option">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award-icon lucide-award"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg>                        
+                        </div>
+                        <a href="certificates.html">View certifications</a>
+                    </div>
+                    <div class="nav-option">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-heart-icon lucide-book-heart"><path d="M16 8.2A2.22 2.22 0 0 0 13.8 6c-.8 0-1.4.3-1.8.9-.4-.6-1-.9-1.8-.9A2.22 2.22 0 0 0 8 8.2c0 .6.3 1.2.7 1.6A226.652 226.652 0 0 0 12 13a404 404 0 0 0 3.3-3.1 2.413 2.413 0 0 0 .7-1.7"/><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/></svg>                        </div>
+                        <a href="top-picks.html">Top Picks</a>
+                    </div>
+                    <div class="nav-option" id="exit-trap">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-log-out-icon lucide-log-out"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" x2="9" y1="12" y2="12"/></svg> 
+                        </div>
+                        <a href="blog.html" onclick="trapUser(event)">Exit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Contact Form Popup HTML with Web3Forms fields -->
+        <div id="contact-popup" class="contact-popup">
+            <div class="popup-content">
+                <div class="popup-header">
+                    <h3>Contact Me</h3>
+                    <button id="close-popup" class="close-btn">&times;</button>
+                </div>
+                <div class="popup-body">
+                    <form id="contact-form">
+                        <!-- Hidden Web3Forms fields -->
+                        <input type="hidden" name="access_key" value="82b20fdf-e5e9-4b43-a37b-616c0304ef3e">
+                        <input type="hidden" name="from_name" value="Website Contact Form">
+                        <input type="checkbox" name="botcheck" style="display: none;">
+                        
+                        <div class="form-row">
+                            <div class="form-col label-col">
+                                <span>To:</span>
+                            </div>
+                            <div class="form-col input-col">
+                                <div class="fake-input">Sebastian Castro</div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-col label-col">
+                                <span>From:</span>
+                            </div>
+                            <div class="form-col input-col">
+                                <input type="email" id="sender-email" name="email" placeholder="Your email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-col label-col">
+                                <span>Subject:</span>
+                            </div>
+                            <div class="form-col input-col">
+                                <select id="subject" name="subject_choice" required>
+                                    <option value="" disabled selected>Select a subject</option>
+                                    <option value="job">Job Opportunity</option>
+                                    <option value="project">Project Collaboration</option>
+                                    <option value="question">Question</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="message-row">
+                            <div class="form-col full-width">
+                                <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+                            </div>
+                        </div>
+                    
+                        <!-- File input for attachments -->
+                        <input type="file" id="file-input" style="display: none;">
+                        
+                        <div class="action-buttons">
+                            <button type="button" id="attach-button" class="attach-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l8.57-8.57A4 4 0 1 1 18 8.84l-8.59 8.57a2 2 0 0 1-2.83-2.83l8.49-8.48"/></svg>
+                                Attach
+                            </button>
+                            <button type="submit" id="send-button" disabled>Send</button>
+                        </div>
+                        
+                        <!-- Result div for Web3Forms response messages -->
+                        <div id="result" style="display: none;"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    <!-- Footer added here -->
+    <footer>
+        © 2025 Sebastian Castro. All rights reserved.
+    </footer>
+    
+    <!-- Mobile Navigation - Outside the wrapper -->
+    <nav class="mobile-nav">
+        <a class="mobile-nav-link" href="">Home</a>
+        <div class="mobile-nav-controls">
+            <button id="burger-menu-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg>
+            </button>
+            <button id="mobile-theme-toggle" aria-label="Toggle dark/light mode">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="theme-icon sun-icon"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="theme-icon moon-icon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+            </button>
+        </div>
+        <div id="mobile-menu">
+            <a class="mobile-nav-link" href="sebastianCastro.pdf" download>Resume</a>
+            <a class="mobile-nav-link" href="skills.html">Skills</a>
+            <a class="mobile-nav-link" href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <script>
+        // Toggle mobile menu
+        document.getElementById('burger-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Theme toggle functionality
+        function toggleTheme() {
+            const htmlElement = document.documentElement;
+            const isDarkMode = htmlElement.classList.contains('dark-mode');
+            
+            // Toggle class on html element
+            htmlElement.classList.toggle('dark-mode');
+            htmlElement.classList.toggle('light-mode');
+            
+            // Save preference to localStorage
+            localStorage.setItem('theme', isDarkMode ? 'light' : 'dark');
+        }
+        
+        // Event listeners for theme toggle buttons
+        document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
+        document.getElementById('mobile-theme-toggle').addEventListener('click', toggleTheme);
+    </script>
+    <script>
+        function trapUser(event) {
+            // Prevent default link behavior
+            event.preventDefault();
+            
+            // Apply glitch effects to the entire page
+            document.body.classList.add('glitch-effect');
+            
+            // Convert visible text to binary for a moment
+            const textElements = document.querySelectorAll('h1, h2, p, a, span');
+            const originalText = [];
+            
+            // Store original text and replace with binary
+            textElements.forEach((element, index) => {
+                if (element.textContent.trim() !== '') {
+                    originalText[index] = element.textContent;
+                    element.textContent = convertToBinary(element.textContent);
+                }
+            });
+            
+            // Invert colors
+            document.documentElement.style.filter = 'invert(1)';
+            
+            // Add distortion to layout
+            const wrapper = document.getElementById('wrapper');
+            if (wrapper) {
+                wrapper.style.transform = 'skew(2deg, 1deg)';
+            }
+            
+            // Random element flickering
+            const randomElements = Array.from(document.querySelectorAll('div')).slice(0, 10);
+            randomElements.forEach(el => {
+                el.classList.add('flicker');
+            });
+            
+            // Reset everything after a short time
+            setTimeout(() => {
+                // Restore original text
+                textElements.forEach((element, index) => {
+                    if (originalText[index]) {
+                        element.textContent = originalText[index];
+                    }
+                });
+                
+                // Remove all effects
+                document.body.classList.remove('glitch-effect');
+                document.documentElement.style.filter = '';
+                if (wrapper) {
+                    wrapper.style.transform = '';
+                }
+                randomElements.forEach(el => {
+                    el.classList.remove('flicker');
+                });
+                
+                // Subtle reload effect - just fade in/out
+                document.body.style.opacity = '0';
+                setTimeout(() => {
+                    document.body.style.opacity = '1';
+                }, 300);
+                
+            }, 800); // Duration of glitch effect before reverting
+        }
+
+        // Helper to convert text to binary
+        function convertToBinary(text) {
+            // Take just a portion of the text to convert
+            const sample = text.substring(0, Math.min(text.length, 8));
+            let result = '';
+            
+            for (let i = 0; i < sample.length; i++) {
+                const binary = sample.charCodeAt(i).toString(2);
+                // Pad with 0s to make 8 bits
+                result += '0'.repeat(8 - binary.length) + binary + ' ';
+            }
+            
+            return result + '01001101 01000101';
+        }
+    </script>
+</body>
+</html>

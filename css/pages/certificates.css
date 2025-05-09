@@ -1,0 +1,307 @@
+#wrapper {
+    max-width: 900px;
+}
+
+/* Certificate Page Specific Styles */
+.page-title {
+    margin-bottom: var(--spacing-8);
+    width: 100%;
+    text-align: left;
+}
+
+.certificate-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: var(--spacing-8);
+    width: 100%;
+}
+
+.certificate-card {
+    border-radius: var(--spacing-3);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.dark-mode .certificate-card {
+    background-color: var(--dark-bg-secondary);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border: 1px solid #3d3d3d;
+}
+
+.light-mode .certificate-card {
+    background-color: var(--light-bg-secondary);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dfd5b2;
+}
+
+.certificate-card:hover {
+    transform: translateY(-5px);
+}
+
+.dark-mode .certificate-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.light-mode .certificate-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.certificate-image {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: var(--spacing-4); */
+}
+
+.certificate-logo {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.certificate-content {
+    padding: var(--spacing-4);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.certificate-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0 0 var(--spacing-2) 0;
+}
+
+.dark-mode .certificate-title {
+    color: var(--dark-text-primary);
+}
+
+.light-mode .certificate-title {
+    color: var(--light-text-primary);
+}
+
+.certificate-issuer {
+    font-size: 0.9rem;
+    margin: 0 0 var(--spacing-2) 0;
+}
+
+.dark-mode .certificate-issuer {
+    color: var(--dark-accent);
+}
+
+.light-mode .certificate-issuer {
+    color: var(--light-accent);
+}
+
+.certificate-date {
+    font-size: 0.85rem;
+}
+
+.dark-mode .certificate-date {
+    color: var(--dark-text-tertiary);
+}
+
+.light-mode .certificate-date {
+    color: var(--light-text-tertiary);
+}
+
+.certificate-description {
+    margin: var(--spacing-3) 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+.certificate-actions {
+    margin-top: var(--spacing-4);
+    display: flex;
+    gap: var(--spacing-3);
+}
+
+.certificate-button {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    padding: var(--spacing-2) var(--spacing-4);
+    border-radius: var(--spacing-1);
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.dark-mode .certificate-button.primary {
+    background-color: var(--dark-accent);
+    color: var(--dark-bg-primary);
+}
+
+.light-mode .certificate-button.primary {
+    background-color: var(--light-accent);
+    color: white;
+}
+
+.dark-mode .certificate-button.secondary {
+    background-color: transparent;
+    color: var(--dark-text-primary);
+    border: 1px solid var(--dark-text-tertiary);
+}
+
+.light-mode .certificate-button.secondary {
+    background-color: transparent;
+    color: var(--light-text-primary);
+    border: 1px solid var(--light-text-tertiary);
+}
+
+.dark-mode .certificate-button.primary:hover {
+    background-color: #a8a8ff;
+}
+
+.light-mode .certificate-button.primary:hover {
+    background-color: #4687c9;
+}
+
+.dark-mode .certificate-button.secondary:hover {
+    border-color: var(--dark-text-primary);
+}
+
+.light-mode .certificate-button.secondary:hover {
+    border-color: var(--light-text-primary);
+}
+
+.category-section {
+    margin-bottom: var(--spacing-16);
+    width: 100%;
+}
+
+.category-header {
+    margin-bottom: var(--spacing-6);
+    padding-bottom: var(--spacing-2);
+    position: relative;
+}
+
+.dark-mode .category-header {
+    border-bottom: 1px solid #3d3d3d;
+}
+
+.light-mode .category-header {
+    border-bottom: 1px solid #dfd5b2;
+}
+
+.category-header h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: normal;
+}
+
+.dark-mode .category-header h2 {
+    color: var(--dark-text-primary);
+}
+
+.light-mode .category-header h2 {
+    color: var(--light-text-primary);
+}
+
+.category-header::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.dark-mode .category-header::after {
+    background-color: var(--dark-accent);
+}
+
+.light-mode .category-header::after {
+    background-color: var(--light-accent);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .certificate-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .certificate-card {
+        max-width: 100%;
+    }
+}
+
+/* Badge styles for featured certificates */
+.certificate-badge {
+    position: absolute;
+    top: var(--spacing-4);
+    right: var(--spacing-4);
+    padding: var(--spacing-1) var(--spacing-3);
+    border-radius: var(--spacing-4);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.dark-mode .certificate-badge.featured {
+    background-color: var(--dark-accent);
+    color: var(--dark-bg-primary);
+}
+
+.light-mode .certificate-badge.featured {
+    background-color: var(--light-accent);
+    color: white;
+}
+
+/* Progress indicator for in-progress certificates */
+.progress-container {
+    width: 100%;
+    height: 4px;
+    background-color: rgba(128, 128, 128, 0.2);
+    border-radius: 2px;
+    margin-top: var(--spacing-2);
+}
+
+.progress-bar {
+    height: 100%;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+.dark-mode .progress-bar {
+    background-color: var(--dark-accent);
+}
+
+.light-mode .progress-bar {
+    background-color: var(--light-accent);
+}
+
+/* Skills tag styles */
+.certificate-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-2);
+    margin-top: var(--spacing-3);
+}
+
+.skill-tag {
+    padding: 2px var(--spacing-2);
+    border-radius: var(--spacing-1);
+    font-size: 0.75rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode .skill-tag {
+    background-color: rgba(152, 152, 255, 0.1);
+    color: var(--dark-accent);
+}
+
+.light-mode .skill-tag {
+    background-color: rgba(53, 118, 184, 0.1);
+    color: var(--light-accent);
+}

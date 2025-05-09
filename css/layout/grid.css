@@ -1,0 +1,27 @@
+/* Grid and Layout Styles */
+
+/* Wrapper styles */
+#wrapper {
+    width: 100%;
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box; 
+}
+
+#about-me {
+    width: 100%;
+    max-width: 800px; /* Slightly wider to match screenshot */
+    padding: 0px 0 40px 0; /* More top padding to match screenshot */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-4);
+    text-align: left; /* Ensure text is left-aligned */
+}
+
+.text-center {
+    grid-template-columns: 1fr !important;
+}
